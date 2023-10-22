@@ -13,5 +13,6 @@ namespace Supermarket_mvp.Models
         void Delete(int id);
         IEnumerable<PayModeModel> GetAll();
         IEnumerable<PayModeModel> Get(string value);
+        IEnumerable<PayModeModel> GetByValue(string searchValue);
     }
 }
