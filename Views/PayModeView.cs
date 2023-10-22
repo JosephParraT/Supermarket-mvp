@@ -4,13 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Supermarket_mvp.Views
 {
-    public partial class PayModeView : Form , IPayModeView
+    public partial class PayModeView : Form, IPayModeView
     {
         private bool isEdit;
         private bool isSuccesful;
@@ -42,6 +43,26 @@ namespace Supermarket_mvp.Views
             DgPayMode.DataSource = payModeList;
         }
 
+        private static PayModeView instance;
+
+        Publisher static PayModeView GetInstance()
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PayModeView();
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
+        }
+
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -49,7 +70,7 @@ namespace Supermarket_mvp.Views
         public string SearchValue
         {
             get { return TxtSearch.Text; }
-            set { TxtSearch.Text = value;}
+            set { TxtSearch.Text = value; }
         }
         public bool IsEdit
         {
@@ -81,10 +102,14 @@ namespace Supermarket_mvp.Views
             {
                 if (e.KeyCode == Keys.Enter)
                 {
-                    SearchEvent?.Invoke(this,EventArgs.Empty);
+                    SearchEvent?.Invoke(this, EventArgs.Empty);
                 }
             };
         }
 
+        private void PayModeView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
