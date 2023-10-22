@@ -15,6 +15,8 @@ namespace Supermarket_mvp.Views
         private bool isEdit;
         private bool isSuccesful;
         private string message;
+        private TabPage tabPagePayModeDetail;
+
         public PayModeView()
         {
             InitializeComponent();
@@ -68,6 +70,8 @@ namespace Supermarket_mvp.Views
         {
             InitializeComponent();
             AssociateAndRaiseViewEvents();
+
+            tabControl1.TabPages.Remove(tabPagePayModeDetail);
         }
 
         private void AssociateAndRaiseViewEvents()
