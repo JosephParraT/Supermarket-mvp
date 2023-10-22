@@ -1,0 +1,16 @@
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\bin\Debug\net7.0-windows\Supermarket-mvp.exe
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\bin\Debug\net7.0-windows\Supermarket-mvp.deps.json
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\bin\Debug\net7.0-windows\Supermarket-mvp.runtimeconfig.json
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\bin\Debug\net7.0-windows\Supermarket-mvp.dll
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\bin\Debug\net7.0-windows\Supermarket-mvp.pdb
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Form1.resources
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.csproj.GenerateResource.cache
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.AssemblyInfoInputs.cache
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.AssemblyInfo.cs
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.csproj.CoreCompileInputs.cache
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.dll
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\refint\Supermarket-mvp.dll
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.pdb
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.genruntimeconfig.cache
+C:\Users\JOSEPH\source\repos\Supermarket-mvp\obj\Debug\net7.0-windows\ref\Supermarket-mvp.dll
