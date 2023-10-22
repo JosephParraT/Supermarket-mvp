@@ -287,6 +287,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
+            IsMdiContainer = true;
             Name = "PayModeView";
             Text = "Pay Mode Management";
             Load += PayModeView_Load;
