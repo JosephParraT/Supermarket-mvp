@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProviderView));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             label1 = new Label();
@@ -71,7 +72,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.providers;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 6);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(94, 50);
@@ -121,7 +122,7 @@
             // BtnClose
             // 
             BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnClose.Image = Properties.Resources.cerrar;
+            BtnClose.Image = (Image)resources.GetObject("BtnClose.Image");
             BtnClose.Location = new Point(585, 288);
             BtnClose.Name = "BtnClose";
             BtnClose.Size = new Size(180, 59);
@@ -131,7 +132,7 @@
             // BtnDelete
             // 
             BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnDelete.Image = Properties.Resources.delete;
+            BtnDelete.Image = (Image)resources.GetObject("BtnDelete.Image");
             BtnDelete.Location = new Point(585, 214);
             BtnDelete.Name = "BtnDelete";
             BtnDelete.Size = new Size(180, 58);
@@ -141,7 +142,7 @@
             // BtnEdit
             // 
             BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnEdit.Image = Properties.Resources.edit;
+            BtnEdit.Image = (Image)resources.GetObject("BtnEdit.Image");
             BtnEdit.Location = new Point(585, 141);
             BtnEdit.Name = "BtnEdit";
             BtnEdit.Size = new Size(180, 59);
@@ -151,7 +152,7 @@
             // BtnNew
             // 
             BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnNew.Image = Properties.Resources._new;
+            BtnNew.Image = (Image)resources.GetObject("BtnNew.Image");
             BtnNew.Location = new Point(585, 70);
             BtnNew.Name = "BtnNew";
             BtnNew.Size = new Size(180, 59);
@@ -175,7 +176,7 @@
             // BtnSearch
             // 
             BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnSearch.Image = Properties.Resources.search_small;
+            BtnSearch.Image = (Image)resources.GetObject("BtnSearch.Image");
             BtnSearch.Location = new Point(523, 25);
             BtnSearch.Name = "BtnSearch";
             BtnSearch.Size = new Size(44, 39);
@@ -221,7 +222,7 @@
             // 
             // BtnCancel
             // 
-            BtnCancel.Image = Properties.Resources.cancel;
+            BtnCancel.Image = (Image)resources.GetObject("BtnCancel.Image");
             BtnCancel.Location = new Point(137, 278);
             BtnCancel.Name = "BtnCancel";
             BtnCancel.Size = new Size(88, 41);
@@ -230,7 +231,7 @@
             // 
             // BtnSave
             // 
-            BtnSave.Image = Properties.Resources.save;
+            BtnSave.Image = (Image)resources.GetObject("BtnSave.Image");
             BtnSave.Location = new Point(29, 278);
             BtnSave.Name = "BtnSave";
             BtnSave.Size = new Size(88, 41);
