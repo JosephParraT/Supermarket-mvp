@@ -30,6 +30,7 @@ namespace Supermarket_mvp.Properties {
         internal static Image search_small;
         internal static Image cancel;
         internal static Image save;
+        internal static Image providers;
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
