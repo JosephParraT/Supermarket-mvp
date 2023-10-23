@@ -1,14 +1,12 @@
-﻿using System;
+﻿using Supermarket_mvp.Models;
+using Supermarket_mvp.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Supermarket_mvp.Views;
-using Supermarket_mvp.Models;
-using static Azure.Core.HttpHeader;
-using System.Drawing;
 
-namespace Supermarket_mvp.Presenters.Presenters
+namespace Supermarket_mvp.Presenters
 {
     internal class ProductPresenter
     {
@@ -69,15 +67,15 @@ namespace Supermarket_mvp.Presenters.Presenters
                     repository.Add(product);
                     view.Message = "Product added successfuly";
                 }
-                view.IsSuccesful = true;
-                LoadAllProductList();
-                CleanViewFields();
             }
             catch (Exception ex)
             {
                 view.IsSuccesful = false;
                 view.Message = ex.Message;
             }
+            view.IsSuccesful = true;
+            LoadAllProductList();
+            CleanViewFields();
         }
 
         private void CleanViewFields()
@@ -85,7 +83,7 @@ namespace Supermarket_mvp.Presenters.Presenters
             view.ProductId = "0";
             view.ProductName = "";
             view.ProductObservation = "";
-            view.ProductPrice= "";
+            view.ProductPrice = "";
         }
 
         private void DeleteSelectedProduct(object? sender, EventArgs e)
@@ -135,4 +133,5 @@ namespace Supermarket_mvp.Presenters.Presenters
             productBindingSource.DataSource = productList;
         }
     }
+
 }
