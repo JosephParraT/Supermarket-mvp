@@ -27,4 +27,5 @@ namespace Supermarket_mvp.Views
         void SetProductListBildingSource(BindingSource productList);
         void Show();
     }
+
 }
