@@ -10,8 +10,9 @@
 
 namespace Supermarket_mvp.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
     /// </summary>
@@ -23,7 +24,12 @@ namespace Supermarket_mvp.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+        internal static Image products;
+        internal static Image cerrar;
+        internal static Image delete;
+        internal static Image search_small;
+        internal static Image cancel;
+        internal static Image save;
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;

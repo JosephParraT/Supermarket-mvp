@@ -7,6 +7,7 @@ using Supermarket_mvp.Views;
 using Supermarket_mvp.Models;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using static Azure.Core.HttpHeader;
 
 namespace Supermarket_mvp.Presenters
 {
@@ -57,7 +58,7 @@ namespace Supermarket_mvp.Presenters
 
             try
             {
-                new Common.ModelDataValidation().Validate(payMode);
+                object value = new Common.ModelDataValidation().Validate(payMode);
                 if (view.IsEdit)
                 {
                     repository.Edit(payMode);
