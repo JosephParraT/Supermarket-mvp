@@ -43,8 +43,6 @@
             TxtSearch = new TextBox();
             label1 = new Label();
             tabPageProductDetail = new TabPage();
-            TxtProductPrice = new TextBox();
-            label5 = new Label();
             BtnCancel = new Button();
             BtnSave = new Button();
             TxtProductObservation = new TextBox();
@@ -53,6 +51,8 @@
             label3 = new Label();
             TxtProductId = new TextBox();
             label2 = new Label();
+            TxtProductPrice = new TextBox();
+            label5 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
@@ -73,6 +73,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = Properties.Resources.products;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(109, 70);
@@ -123,7 +124,7 @@
             // BtnClose
             // 
             BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnClose.Image = (Image)resources.GetObject("BtnClose.Image");
+            BtnClose.Image = Properties.Resources.cerrar;
             BtnClose.Location = new Point(512, 230);
             BtnClose.Name = "BtnClose";
             BtnClose.Size = new Size(199, 59);
@@ -133,7 +134,7 @@
             // BtnDelete
             // 
             BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnDelete.Image = (Image)resources.GetObject("BtnDelete.Image");
+            BtnDelete.Image = Properties.Resources.delete;
             BtnDelete.Location = new Point(512, 154);
             BtnDelete.Name = "BtnDelete";
             BtnDelete.Size = new Size(199, 64);
@@ -163,7 +164,7 @@
             // BtnSearch
             // 
             BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnSearch.Image = (Image)resources.GetObject("BtnSearch.Image");
+            BtnSearch.Image = Properties.Resources.search_small;
             BtnSearch.Location = new Point(466, 10);
             BtnSearch.Name = "BtnSearch";
             BtnSearch.Size = new Size(38, 44);
@@ -223,27 +224,9 @@
             tabPageProductDetail.Text = "Product Detail";
             tabPageProductDetail.UseVisualStyleBackColor = true;
             // 
-            // TxtProductPrice
-            // 
-            TxtProductPrice.Location = new Point(253, 43);
-            TxtProductPrice.Name = "TxtProductPrice";
-            TxtProductPrice.PlaceholderText = "Enter price";
-            TxtProductPrice.Size = new Size(193, 23);
-            TxtProductPrice.TabIndex = 12;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = SystemColors.Control;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(253, 19);
-            label5.Name = "label5";
-            label5.Size = new Size(142, 21);
-            label5.TabIndex = 11;
-            label5.Text = "PRODUCTS PRICE";
-            // 
             // BtnCancel
             // 
+            BtnCancel.Image = Properties.Resources.cancel;
             BtnCancel.Location = new Point(489, 155);
             BtnCancel.Name = "BtnCancel";
             BtnCancel.Size = new Size(75, 45);
@@ -252,6 +235,7 @@
             // 
             // BtnSave
             // 
+            BtnSave.Image = Properties.Resources.save;
             BtnSave.Location = new Point(344, 155);
             BtnSave.Name = "BtnSave";
             BtnSave.Size = new Size(75, 45);
@@ -317,6 +301,25 @@
             label2.Size = new Size(115, 21);
             label2.TabIndex = 2;
             label2.Text = "PRODUCTS ID";
+            // 
+            // TxtProductPrice
+            // 
+            TxtProductPrice.Location = new Point(253, 43);
+            TxtProductPrice.Name = "TxtProductPrice";
+            TxtProductPrice.PlaceholderText = "Enter price";
+            TxtProductPrice.Size = new Size(193, 23);
+            TxtProductPrice.TabIndex = 12;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = SystemColors.Control;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(253, 19);
+            label5.Name = "label5";
+            label5.Size = new Size(142, 21);
+            label5.TabIndex = 11;
+            label5.Text = "PRODUCTS PRICE";
             // 
             // ProductView
             // 

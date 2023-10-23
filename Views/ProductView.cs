@@ -152,7 +152,7 @@ namespace Supermarket_mvp.Views
             set { message = value; }
         }
 
-
+        
 
         public event EventHandler SearchEvent;
         public event EventHandler AddNewEvent;
