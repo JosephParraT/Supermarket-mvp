@@ -14,4 +14,5 @@ namespace Supermarket_mvp.Models
         IEnumerable<ProductModel> GetAll();
         IEnumerable<ProductModel> GetByValue(string value);
     }
+
 }
